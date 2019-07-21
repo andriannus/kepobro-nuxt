@@ -13,51 +13,51 @@
         <aside class="menu">
           <ul class="menu-list">
             <li>
-              <router-link
+              <nuxt-link
                 to="/business"
               >
                 Business
-              </router-link>
+              </nuxt-link>
             </li>
 
             <li>
-              <router-link
+              <nuxt-link
                 to="/entertainment"
               >
                 Entertainment
-              </router-link>
+              </nuxt-link>
             </li>
 
             <li>
-              <router-link
+              <nuxt-link
                 to="/health"
               >
                 Health
-              </router-link>
+              </nuxt-link>
             </li>
 
             <li>
-              <router-link
+              <nuxt-link
                 to="/science"
               >
                 Science
-              </router-link>
+              </nuxt-link>
             </li>
 
             <li>
-              <router-link
+              <nuxt-link
                 to="/sports"
               >
                 Sports
-              </router-link>
+              </nuxt-link>
             </li>
 
             <li>
-              <router-link
+              <nuxt-link
                 to="/technology"
               >
                 Technology
-              </router-link>
+              </nuxt-link>
             </li>
           </ul>
         </aside>
@@ -70,63 +70,63 @@
       >
         <ul>
           <li>
-            <router-link to="/business">
+            <nuxt-link to="/business">
               <span class="icon is-small">
                 <i class="fas fa-briefcase" aria-hidden="true" />
               </span>
 
               <span>Business</span>
-            </router-link>
+            </nuxt-link>
           </li>
 
           <li>
-            <router-link to="/entertainment">
+            <nuxt-link to="/entertainment">
               <span class="icon is-small">
                 <i class="fas fa-image" aria-hidden="true" />
               </span>
 
               <span>Entertainment</span>
-            </router-link>
+            </nuxt-link>
           </li>
 
           <li>
-            <router-link to="/health">
+            <nuxt-link to="/health">
               <span class="icon is-small">
                 <i class="fas fa-heartbeat" aria-hidden="true" />
               </span>
 
               <span>Health</span>
-            </router-link>
+            </nuxt-link>
           </li>
 
           <li>
-            <router-link to="/science">
+            <nuxt-link to="/science">
               <span class="icon is-small">
                 <i class="fas fa-atom" aria-hidden="true" />
               </span>
 
               <span>Science</span>
-            </router-link>
+            </nuxt-link>
           </li>
 
           <li>
-            <router-link to="/sports">
+            <nuxt-link to="/sports">
               <span class="icon is-small">
                 <i class="fas fa-dumbbell" aria-hidden="true" />
               </span>
 
               <span>Sports</span>
-            </router-link>
+            </nuxt-link>
           </li>
 
           <li>
-            <router-link to="/technology">
+            <nuxt-link to="/technology">
               <span class="icon is-small">
                 <i class="fas fa-mobile-alt" aria-hidden="true" />
               </span>
 
               <span>Technology</span>
-            </router-link>
+            </nuxt-link>
           </li>
         </ul>
       </div>

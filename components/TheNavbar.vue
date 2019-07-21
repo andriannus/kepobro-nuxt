@@ -6,7 +6,7 @@
   >
     <div class="container">
       <div class="navbar-brand">
-        <router-link
+        <nuxt-link
           class="navbar-item"
           to="/"
         >
@@ -14,7 +14,7 @@
             src="images/logo.jpg"
             alt="KepoBro News"
           >
-        </router-link>
+        </nuxt-link>
       </div>
     </div>
   </nav>
