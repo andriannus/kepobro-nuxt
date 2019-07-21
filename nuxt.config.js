@@ -1,4 +1,3 @@
-const API = require('./assets/consts/api')
 const pkg = require('./package')
 
 module.exports = {
@@ -65,7 +64,6 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: `${API.URL}?apiKey=${API.KEY}&country=${API.COUNTRY}`
   },
 
   /*
