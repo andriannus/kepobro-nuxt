@@ -1,3 +1,4 @@
+const API = require('./assets/consts/api')
 const pkg = require('./package')
 
 module.exports = {
@@ -24,7 +25,13 @@ module.exports = {
       { name: 'twitter:site', content: 'KepoBro News' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://use.fontawesome.com/releases/v5.8.1/css/all.css',
+        integrity: 'sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf',
+        crossorigin: 'anonymous'
+      }
     ]
   },
 
@@ -51,15 +58,14 @@ module.exports = {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma'
+    '@nuxtjs/axios'
   ],
   /*
   ** Axios module configuration
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseURL: `${API.URL}?apiKey=${API.KEY}&country=${API.COUNTRY}`
   },
 
   /*
