@@ -2,7 +2,7 @@
   <div class="card">
     <header class="card-header">
       <span class="card-header-title">
-        Trending
+        Science
       </span>
 
       <a
