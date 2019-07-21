@@ -7,11 +7,21 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'en',
+      class: 'has-background-light has-navbar-fixed-top'
+    },
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { name: 'og:image', content: 'https://news.andriannus.id/images/logo.jpg' },
+      { name: 'og:site_name', content: 'KepoBro News' },
+      { name: 'og:type', content: 'site.news' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: 'https://news.andriannus.id/images/logo.jpg' },
+      { name: 'twitter:site', content: 'KepoBro News' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -27,6 +37,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '~/assets/styles/app.scss'
   ],
 
   /*
