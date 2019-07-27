@@ -16,6 +16,34 @@
           >
         </nuxt-link>
       </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a
+                href="https://github.com/andriannus/kepobro-nuxt"
+                class="button is-light"
+              >
+                <span class="icon">
+                  <i class="fab fa-github" />
+                </span>
+                <span>GitHub</span>
+              </a>
+
+              <a
+                href="https://kepobro-news.herokuapp.com"
+                class="button is-danger"
+              >
+                <span class="icon">
+                  <i class="fab fa-angular" />
+                </span>
+                <span>Angular</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 </template>
