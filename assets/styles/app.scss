@@ -52,8 +52,10 @@ $list-font: Bold BoldItalic Thin ThinItalic Light LightItalic Medium MediumItali
 }
 
 .sidebar {
-  position: sticky !important;
-  top: 62px;
+  @media (min-width: 768px) {
+    position: sticky !important;
+    top: 62px;
+  }
 }
 
 @import '~bulma/bulma.sass';

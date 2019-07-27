@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="sidebar">
     <div
-      class="card is-hidden-mobile sidebar"
+      class="card is-hidden-mobile"
     >
       <header class="card-header">
         <span class="card-header-title">
