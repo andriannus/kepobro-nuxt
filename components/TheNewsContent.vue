@@ -36,12 +36,14 @@
             <p class="image is-64x64">
               <img
                 v-if="!!article.urlToImage === true"
+                :alt="article.title"
                 :src="article.urlToImage"
                 onerror="this.src='https://bulma.io/images/placeholders/480x320.png'"
               >
 
               <img
                 v-if="!!article.urlToImage === false"
+                :alt="article.title"
                 src="https://bulma.io/images/placeholders/480x320.png"
               >
             </p>
