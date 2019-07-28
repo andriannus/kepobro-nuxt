@@ -64,6 +64,10 @@ module.exports = {
       },
       dev: false,
       id: 'UA-76380242-4'
+    }],
+    ['@nuxtjs/robots', {
+      UserAgent: '*',
+      Disallow: '/read'
     }]
   ],
   /*
