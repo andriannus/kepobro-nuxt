@@ -85,12 +85,6 @@ export default {
         .finally(() => {
           this.isLoading = false
         })
-    },
-
-    readArticle(article) {
-      localStorage.setItem('article', JSON.stringify(article))
-
-      this.$router.push('/read')
     }
   }
 }
