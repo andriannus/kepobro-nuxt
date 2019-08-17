@@ -9,7 +9,7 @@
         v-if="isLoading === false"
         class="card-header-icon"
         title="Refresh News"
-        @click="getNews()"
+        @click="fetchNews()"
       >
         <span class="icon">
           <i class="fas fa-sync-alt" />
@@ -104,6 +104,10 @@ export default {
   },
 
   methods: {
+    fetchNews() {
+      this.$emit('refetchNews')
+    },
+
     readArticle(article) {
       localStorage.setItem('article', JSON.stringify(article))
 

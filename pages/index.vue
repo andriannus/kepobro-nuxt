@@ -3,6 +3,7 @@
     :articles="articles"
     :is-loading="isLoading"
     :title="title"
+    @refetchNews="onRefetchNews"
   />
 </template>
 
@@ -68,11 +69,11 @@ export default {
   },
 
   mounted() {
-    this.getNews()
+    this.fetchNews()
   },
 
   methods: {
-    getNews() {
+    fetchNews() {
       this.isLoading = true
 
       this.$axios.$get(`${API.URL}?apiKey=${API.KEY}&country=${API.COUNTRY}`)
@@ -85,6 +86,10 @@ export default {
         .finally(() => {
           this.isLoading = false
         })
+    },
+
+    onRefetchNews() {
+      this.fetchNews()
     }
   }
 }
