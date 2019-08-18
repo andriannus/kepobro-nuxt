@@ -32,6 +32,16 @@
               </a>
 
               <a
+                href="https://news-react.andriannus.id"
+                class="button is-info"
+              >
+                <span class="icon">
+                  <i class="fab fa-react" />
+                </span>
+                <span>React.js</span>
+              </a>
+
+              <a
                 href="https://kepobro-news.herokuapp.com"
                 class="button is-danger"
               >
