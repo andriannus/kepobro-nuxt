@@ -99,10 +99,6 @@ export default {
     }
   },
 
-  data() {
-    return {}
-  },
-
   methods: {
     fetchNews() {
       this.$emit('refetchNews')
