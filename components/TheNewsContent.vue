@@ -83,25 +83,54 @@
 </template>
 
 <script>
+import { API } from '~/assets/consts/api'
+import { capitalize } from '~/assets/utils/transform'
+
 export default {
   props: {
-    articles: {
-      default: null,
-      type: Array
-    },
-    isLoading: {
-      default: true,
-      type: Boolean
-    },
-    title: {
+    category: {
       default: '',
       type: String
     }
   },
 
+  data() {
+    return {
+      articles: [],
+      isLoading: false,
+      title: ''
+    }
+  },
+
+  mounted() {
+    this.title = capitalize(this.category)
+
+    this.fetchNews()
+  },
+
   methods: {
     fetchNews() {
-      this.$emit('refetchNews')
+      this.isLoading = true
+
+      const queryParams = [
+        `apiKey=${API.KEY}`,
+        `country=${API.COUNTRY}`
+      ]
+
+      if (this.category !== 'trending') {
+        queryParams.push(`category=${this.category}`)
+      }
+
+      this.$axios.$get(`${API.URL}?${queryParams.join('&')}`)
+        .then((res) => {
+          this.articles = res.articles
+        })
+        .catch(() => {
+          this.articles = []
+        })
+        .finally(() => {
+          this.isLoading = false
+        })
     },
 
     readArticle(article) {

@@ -1,15 +1,8 @@
 <template>
-  <TheNewsContent
-    :articles="articles"
-    :is-loading="isLoading"
-    :title="title"
-    @refetchNews="onRefetchNews"
-  />
+  <TheNewsContent :category="'technology'" />
 </template>
 
 <script>
-import { API } from '~/assets/consts/api'
-
 const TheNewsContent = () => import('~/components/TheNewsContent')
 
 export default {
@@ -57,39 +50,6 @@ export default {
           content: 'Technology - KepoBro News'
         }
       ]
-    }
-  },
-
-  data() {
-    return {
-      articles: [],
-      isLoading: true,
-      title: 'Technology'
-    }
-  },
-
-  mounted() {
-    this.fetchNews()
-  },
-
-  methods: {
-    fetchNews() {
-      this.isLoading = true
-
-      this.$axios.$get(`${API.URL}?apiKey=${API.KEY}&country=${API.COUNTRY}&category=technology`)
-        .then((res) => {
-          this.articles = res.articles
-        })
-        .catch(() => {
-          this.articles = []
-        })
-        .finally(() => {
-          this.isLoading = false
-        })
-    },
-
-    onRefetchNews() {
-      this.fetchNews()
     }
   }
 }
