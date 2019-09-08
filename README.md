@@ -1,4 +1,4 @@
-# news
+# KepoBro - Nuxt.js
 
 > NewsAPI with Nuxt.js
 
@@ -19,4 +19,7 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Other Languanges
+
+1. React.js - [Link](https://github.com/andriannus/kepobro-react)
+2. Angular - [Link](https://github.com/andriannus/kepobro-news)
